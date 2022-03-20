@@ -1,8 +1,9 @@
 import { Profile } from "./Profile";
-import { Container } from "./App.styled";
-//import user from '';
 
-const user ={
+//import user from '';
+import user from '../data/user'
+
+/* const user ={
   username: "Jacques Gluke",
   tag: "jgluke",
   location: "Ocho Rios, Jamaica",
@@ -12,11 +13,11 @@ const user ={
     views: 4827,
     likes: 1308
   }
-};
+}; */
 
 export const App = () => {
   return (
-    <Container>
+    
       <Profile
         key={user.tag}
         username={user.username}
@@ -27,8 +28,7 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-    </Container>
-      
+    
 
   );
 };

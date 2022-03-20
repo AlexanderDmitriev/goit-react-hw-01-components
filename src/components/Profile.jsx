@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { Container } from "./App.styled";
 
 export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flaticon.com/512/1077/1077012.png",followers,views,likes}) =>{
     return (
-        <div className="profile">
+        <Container>
             <div className="description">
                 <img
                 src={avatar}
@@ -28,7 +29,7 @@ export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flat
                 <span className="quantity">{likes}</span>
                 </li>
             </ul>
-        </div>
+        </Container>
     );
 };
 
