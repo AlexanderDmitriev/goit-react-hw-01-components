@@ -1,6 +1,4 @@
 import { Profile } from "./Profile";
-
-//import user from '';
 import user from '../data/user'
 
 /* const user ={
