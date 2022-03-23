@@ -1,21 +1,11 @@
 import { Profile } from "./Profile";
-import user from '../data/user'
-
-/* const user ={
-  username: "Jacques Gluke",
-  tag: "jgluke",
-  location: "Ocho Rios, Jamaica",
-  avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308
-  }
-}; */
+import { Statistics } from "./Statistics";
+import user from '../data/user';
+import statisticsInfo from '../data/data.json';
 
 export const App = () => {
   return (
-    
+    <div>
       <Profile
         key={user.tag}
         username={user.username}
@@ -26,7 +16,10 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-    
-
+      <Statistics
+        key={statisticsInfo[0].id}
+        title="Upload stats"
+      />
+    </div> 
   );
 };

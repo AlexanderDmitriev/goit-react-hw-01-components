@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Container, Description, Name, UserTags } from "./App.styled";
 import { ImageAvatar } from "./ImageAvatar";
-import { Stats, StatsItem, Label } from "./Stats";
+import { Stats, StatsItem, Label,Quantity } from "./Stats";
 
 export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flaticon.com/512/1077/1077012.png",followers,views,likes}) =>{
     return (
@@ -20,15 +20,15 @@ export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flat
             <Stats>
                 <StatsItem>
                     <Label>Followers</Label>
-                    <span className="quantity">{followers}</span>
+                    <Quantity>{followers}</Quantity>
                 </StatsItem>
                 <StatsItem>
                     <Label>Views</Label>
-                    <span className="quantity">{views}</span>
+                    <Quantity>{views}</Quantity>
                 </StatsItem>
                 <StatsItem>
                     <Label>Likes</Label>
-                    <span className="quantity">{likes}</span>
+                    <Quantity>{likes}</Quantity>
                 </StatsItem>
             </Stats>
         </Container>

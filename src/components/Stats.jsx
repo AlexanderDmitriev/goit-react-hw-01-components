@@ -19,5 +19,14 @@ export const StatsItem =  styled.li`
 export const Label =  styled.span`
     display: block;
     text-align: center;
-    
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+`;
+export const Quantity = styled.span`
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
 `;

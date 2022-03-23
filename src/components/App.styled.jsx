@@ -6,7 +6,6 @@ export const Container =  styled.div`
     border-radius: 5px;
     width: 240px;
     margin: 20px auto;
-    
 `;
 
 export const Description =  styled.div`
