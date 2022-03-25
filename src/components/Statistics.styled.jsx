@@ -12,11 +12,15 @@ export const StatList =  styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
+    
 `;
 export const StatListItem =  styled.li`
     border: 1px solid rgb(209, 209, 209);
     list-style: none;
     text-align: center;
-    height: 50px;
+    height: 40px;
     width: 25%;
+    padding: 5px;
+    margin: auto 0;
 `;
+

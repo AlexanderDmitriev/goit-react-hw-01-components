@@ -5,7 +5,8 @@ export const Container =  styled.div`
     border: 1px solid rgb(209, 209, 209);
     border-radius: 5px;
     width: 240px;
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-right: 10px;
 `;
 
 export const Description =  styled.div`
@@ -34,3 +35,7 @@ export const UserTags =  styled.p`
     color: #afb1b8;
 `;
 
+export const ContentSection = styled.section`
+    display:flex;
+    justify-content:center;
+`;
