@@ -4,6 +4,7 @@ import { Statistics } from "./Statistics";
 import user from '../data/user';
 import statisticsInfo from '../data/data';
 import {FriendList} from './FriendList';
+import friendsInfo from '../data/friends.json';
 
 export const App = () => {
   return (
@@ -25,7 +26,9 @@ export const App = () => {
             percentage={statisticsInfo.percentage}
         />  
       </div> 
-      <FriendList/>
+      <FriendList
+        friends={friendsInfo}
+      />
     </ContentSection>
     
   );

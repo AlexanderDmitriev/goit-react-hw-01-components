@@ -33,6 +33,6 @@ ul {
 }
 
 .test{
-  background-color: rgb(195, 224, 215);
+  border: 2px solid black;
   
 }

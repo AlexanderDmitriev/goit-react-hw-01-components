@@ -10,7 +10,6 @@ export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flat
                 <ImageAvatar
                     src={avatar}
                     alt="User avatar"
-                    className="avatar"
                 /> 
                 <Name>{username}</Name>
                 <UserTags>@{tag}</UserTags>

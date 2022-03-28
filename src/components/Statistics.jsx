@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Container, Description} from "./App.styled";
 import { Title, StatListItem, StatList } from "./Statistics.styled";
 import { Label,Quantity } from "./Stats";
-import statisticsInfo from '../data/data';
+import statisticsInfo from '../data/data.json';
 import getRandomHexColor from '../getRandomColor'
 
 export const Statistics = ({title,label,percentage}) => {

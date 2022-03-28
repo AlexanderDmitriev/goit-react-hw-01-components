@@ -1,9 +1,11 @@
-export const FriendListItem = ({avatar,name,isOnline}) => {
+import { FriendListItemBlock, FriendAvatar } from "./FriendListItem.styled";
+
+export const FriendListItem = ({avatar="https://cdn-icons-png.flaticon.com/512/2922/2922506.png",name,isOnline=true}) => {
     return (
-        <li className="item">
-            <span className="status"></span>
-            <img className="avatar" src="" alt="User avatar" width="48" />
-            <p className="name"></p>
-        </li>
+        <FriendListItemBlock>
+            <span className="status">ddd</span>
+            <FriendAvatar src={avatar} alt={name} width="48" />
+            <p className="name">ddd</p>
+        </FriendListItemBlock>
     );
 }
