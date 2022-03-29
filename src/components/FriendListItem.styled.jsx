@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+
 export const FriendListItemBlock =  styled.li`
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.3);
     list-style: none;
@@ -25,6 +26,6 @@ export const FriendStatus =  styled.span`
         height: 20px;
         width: 20px;
         border-radius: 50%;
-        background-color: green;
+        background-color: ${props => `${props.isOnline ? `green` : `red`}`};
         margin-right: 10px; 
 `;
