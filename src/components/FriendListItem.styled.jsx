@@ -6,15 +6,25 @@ export const FriendListItemBlock =  styled.li`
     padding: 10px;
     margin-bottom: 5px;
     display: flex;
+    align-items: center;
 `;
 
 export const FriendAvatar =  styled.img`
     border-radius: 50%;
-    background-color: #ffa; 
+    background-color: #ffa;
+    
 `;
 
 export const FriendsName =  styled.p`
-    padding-left: 10px;
+    margin-left: 10px;
     color: grey;
     font-size: 24px; 
+`;
+
+export const FriendStatus =  styled.span`
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: green;
+        margin-right: 10px; 
 `;
