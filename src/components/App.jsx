@@ -1,5 +1,5 @@
 import { ContentSection } from "./App.styled";
-import { Profile } from "./Profile";
+import { Profile } from "./Profiler/Profile";
 import { Statistics } from "./Statistics";
 import user from '../data/user';
 import statisticsInfo from '../data/data';

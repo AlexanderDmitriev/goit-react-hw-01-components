@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import { Container, Description, Name, UserTags } from "./App.styled";
+import { Container} from "../App.styled";
+import { Description, Name, UserTags } from "../Profiler/Profile.styled";
 import { ImageAvatar } from "./ImageAvatar";
-import { Stats, StatsItem, Label,Quantity } from "./Stats";
+import { Stats, StatsItem, Label,Quantity } from "../Statistics/Stats";
 
 export const Profile =({username,tag,location,avatar="https://cdn-icons-png.flaticon.com/512/1077/1077012.png",followers,views,likes}) =>{
     return (
