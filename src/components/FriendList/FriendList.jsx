@@ -1,5 +1,5 @@
-/* import PropTypes from 'prop-types'; */
-import { Container} from "./App.styled";
+import PropTypes from 'prop-types'; 
+import { Container} from "../App.styled";
 import {FriendListItem} from './FriendListItem';
 import {FriendListBlock} from './FriendList.styled';
 
@@ -19,4 +19,11 @@ export const FriendList = ({friends}) => {
             </FriendListBlock>
         </Container>
     );
+};
+
+FriendListItem.propTypes={
+    key:PropTypes.number.isRequired,
+    avatar:PropTypes.string,
+    name:PropTypes.string,
+    isOnline:PropTypes.bool
 };
