@@ -1,16 +1,18 @@
 import { ContentSection } from "./App.styled";
 import { Profile } from "./Profiler/Profile";
-import { Statistics } from "./Statistics";
+import { Statistics } from "./Statistics/Statistics";
+import {FriendList} from './FriendList/FriendList';
+import {TransactionHistory} from './Transactions/TransactionHistory';
 import user from '../data/user';
 import statisticsInfo from '../data/data';
-import {FriendList} from './FriendList/FriendList';
 import friendsInfo from '../data/friends.json';
-import {TransactionHistory} from './TransactionHistory';
 import transactions from '../data/transactions.json';
+
 
 export const App = () => {
   return (
-    <ContentSection>
+    
+      <ContentSection>
         <div>
         <Profile
           key={user.tag}
@@ -24,8 +26,7 @@ export const App = () => {
         />
         <Statistics
             title="Upload stats"
-            label={statisticsInfo.label}
-            percentage={statisticsInfo.percentage}
+            stats={statisticsInfo}
         />  
       </div> 
       <FriendList
@@ -35,6 +36,5 @@ export const App = () => {
         items={transactions}
       />
     </ContentSection>
-    
   );
 };

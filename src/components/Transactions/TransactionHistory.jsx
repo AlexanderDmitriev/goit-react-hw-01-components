@@ -1,13 +1,13 @@
-import { Container} from "./App.styled";
+import { Container} from "../App.styled";
 import {TransactionsRows} from './TransactionsTable';
 import PropTypes from 'prop-types'; 
-import {TableBody} from './TransactionHistory.styled';
+import {Table} from './TransactionHistory.styled';
 import {TransactionHead} from './TransactionHead';
 
 export const TransactionHistory = ({items}) => {
     return (
         <Container>
-            <table className="transaction-history">
+            <Table>
                 <TransactionHead/>
                 <tbody>
                     {items.map(transactions =>
@@ -18,13 +18,12 @@ export const TransactionHistory = ({items}) => {
                             currency={transactions.currency}
                         />)}
                 </tbody>
-            </table>
+            </Table>
         </Container> 
     );
 };
 
 TransactionsRows.propTypes={
-    key:PropTypes.number.isRequired,
     type:PropTypes.string,
     amount:PropTypes.string,
     currency:PropTypes.string

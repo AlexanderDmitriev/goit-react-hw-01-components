@@ -1,13 +1,13 @@
-import {TableHeadRow} from './TransactionHistory.styled';
+import {TableHead} from './TransactionHistory.styled';
 
 export const TransactionHead = () => {
     return (
         <thead>
-            <tr>
+            <TableHead>
                 <th>Type</th>
                 <th>Amount</th>
                 <th>Currency</th>
-            </tr>
+            </TableHead>
         </thead>
     );
 };

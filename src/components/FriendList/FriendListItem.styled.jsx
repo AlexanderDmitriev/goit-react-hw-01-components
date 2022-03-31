@@ -13,7 +13,6 @@ export const FriendListItemBlock =  styled.li`
 export const FriendAvatar =  styled.img`
     border-radius: 50%;
     background-color: #ffa;
-    
 `;
 
 export const FriendsName =  styled.p`
