@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 export const FriendListItemBlock =  styled.li`
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.3);
     list-style: none;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: ${props => props.theme.spacing(3)};
+    margin-bottom:  ${props => props.theme.spacing(1)};
     display: flex;
     align-items: center;
 `;
@@ -16,15 +16,15 @@ export const FriendAvatar =  styled.img`
 `;
 
 export const FriendsName =  styled.p`
-    margin-left: 10px;
+    margin-left:  ${props => props.theme.spacing(3)};
     color: grey;
     font-size: 24px; 
 `;
 
 export const FriendStatus =  styled.span`
-        height: 20px;
-        width: 20px;
+        height:  ${props => props.theme.spacing(5)};
+        width:  ${props => props.theme.spacing(5)};
         border-radius: 50%;
         background-color: ${props => `${props.isOnline ? `green` : `red`}`};
-        margin-right: 10px; 
+        margin-right:  ${props => props.theme.spacing(3)}; 
 `;

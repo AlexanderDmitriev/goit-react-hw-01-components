@@ -8,7 +8,7 @@ import { theme } from "./components/theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={{theme}}>
+    <ThemeProvider theme={theme}>
         <App />
     </ThemeProvider>
     
